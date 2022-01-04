@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg,#00089c, rgb(170, 0, 170));
+    background-size: 300% 300%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.container.title{
+    align-items: center;
+    margin-top: 150px;
+}
+
+@keyframes gradient {
+    
+    0%{
+        background-position: 0 50%;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+    
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+/*TITULO ESCREVENDO*/
+
+
+.container.title h1{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(238, 227, 227);
+    
+}
+
+
+.line{
+    border-right: 2px solid whitesmoke;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  lineP 1s infinite steps(2)  normal, TextP 4s steps(40) 1s normal;
+}
+
+
+@keyframes lineP {
+    from{
+        border-right-color: whitesmoke;
+    }to{
+        border-right: unset;
+    }
+    
+}
+
+
+@keyframes TextP {
+    from{
+        width: 0;
+    }to{
+        width: 100%;
+    }
+    
+}
+
