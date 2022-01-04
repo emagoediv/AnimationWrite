@@ -1,2 +1,2 @@
 # AnimationWrite
-animação de escreita css
+animação de escrita css
